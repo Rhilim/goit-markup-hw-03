@@ -26,7 +26,17 @@ body {
   background-color: var(--body-backgroung-color);
   }
 /* 1. header */
-
+.page-header{
+  
+}
+.container{
+  width: 1152px;
+  padding-right: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
 /* logo */
 .list {
   list-style: none;
@@ -94,11 +104,16 @@ font-weight: 500;
 line-height: 1.33;
 letter-spacing: 0.04em;
 cursor: pointer;
+border-radius: 4px;
+text-align: center;
+border: 1px solid transparent;
 }
 
 .button.primary {
-  color: var(--background-color);
-  background-color: var(--logo-primbutton-color);
+color: var(--background-color);
+background-color: var(--logo-primbutton-color);
+padding: 16px 32px;
+min-width: 169px;
 }
 .button.primary:hover,
 .button.primary:focus {
@@ -110,7 +125,9 @@ cursor: pointer;
 .button.secondary {
 color: var(--logo-primbutton-color);
 padding: 12px 24px;
+border-color: var(--footer-text-color);
 background: var(--bcg-secbutton-color);
+min-height: 48px;
 }
 .button.secondary:hover,
 .button.secondary:focus {
@@ -177,3 +194,4 @@ letter-spacing: 0.02em;
 .footer.studio {
   color: var(--bcg-secbutton-color);
 }
+
