@@ -26,22 +26,26 @@ body {
   background-color: var(--body-backgroung-color);
   }
 /* 1. header */
-.page-header{
-  
+.header{
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .container{
-  width: 1152px;
+  width: 1158px;
   padding-right: 12px;
   padding-right: 12px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
   outline: 2px solid tomato;
 }
 /* logo */
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 
 .logo{
 font-family: 'Raleway', sans-serif;
@@ -79,10 +83,10 @@ color: var(--primary-text-color);
 .link{
 font-family: 'Roboto', sans-serif;
 color:var(--title-color)
-font-size: 18px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 text-decoration: none;
+font-size: 18px;
 }
 .link:active{
   color: var(--active)
@@ -120,8 +124,6 @@ min-width: 169px;
   color: var(--background-color);
   background-color: var(--active);
 }
-
-
 .button.secondary {
 color: var(--logo-primbutton-color);
 padding: 12px 24px;
@@ -136,15 +138,47 @@ min-height: 48px;
 }
  
 /* sections */
+.section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.section-portfolio{
+  padding-top: 0px;
+  padding-bottom: 120px; 
+}
+.container.container-button{
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+/* hero */
+.hero-title {
+color: var(--hero-text-color);
+font-size: 56px;
+letter-spacing: 0.02em;
+line-height: 1.07;
+margin-top: 0px;
+margin-bottom: 48px;
+}
+.hero {
+  text-align: center;
+  color: var(--footer-text-color);
+  background-color: var(--title-color);
+  outline: 1px solid tomato;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  }
 .section-title.advantages {
   display: none;
 }
+
 .section-title-big{
 font-size: 36px;
 letter-spacing: 0.02em;
 line-height: 1.11;
 text-align: center;
 text-transform: capitalize;
+margin-top:0px;
+margin-bottom: 72px;
 }
 .title-portfolio{
 display: none;
@@ -155,35 +189,47 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+padding-top: 0;
+margin-top: 0;
+margin-bottom: 8px;
 }
-.section-text {
+.section-text{
+  margin-top: 0;
+  margin-bottom: 120px;
+}
+.section-text-group{
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+.team {
+  background-color: var(--bcg-secbutton-color);
+  text-align:center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.list-image {
+  
+  margin-bottom: 32px;
+}
+  
+.card-title{
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+.card-text{
+  margin-top: 0px;
+  margin-bottom: 32px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.team {
-  background-color: var(--bcg-secbutton-color);
-  text-align:center
-}
-.team-bgc{
-  background-color:var(--body-backgroung-color);
-}
 
-/* hero */
-.hero-title {
-color: var(--hero-text-color);
-font-size: 56px;
-text-align: center;
-letter-spacing: 0.02em;
-line-height: 1.07;
-}
-.hero {
-  color: var(--footer-text-color);
-  background-color: var(--title-color);
-}
 .footer {
   background-color:var(--title-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer p {
 color: var(--footer-text-color);
