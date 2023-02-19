@@ -29,24 +29,25 @@ body {
 .header{
   padding-top: 24px;
   padding-bottom: 24px;
+   
 }
-.container{
-  width: 1158px;
-  padding-right: 12px;
-  padding-right: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-  outline: 2px solid tomato;
-}
-/* logo */
+
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
-}
+  }
 
+.container{
+  width: 1158px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid tomato;
+}
+/* logo */
 .logo{
 font-family: 'Raleway', sans-serif;
 font-weight: 800;
@@ -55,9 +56,31 @@ text-transform: uppercase;
 .web {
   color: var(--logo-primbutton-color);
 }
-
+.main-nav{
+  display: flex;
+  align-items: center;
+}
 /* site nav */
+
+.site-nav{
+  display: flex;
+  margin-left: 76px;
+}
+
+.site-nav .item + .item{
+  margin-left: 40px;
+}
+/* .site-nav .item:not(:last-child){
+  margin-right: 40px;
+} */
+/* .site-nav .item:last-child{
+  margin-right: 0;
+} */
 .site-nav a {
+display: block;
+padding-top: 24px;
+padding-bottom: 24px;
+
 color: var(--title-color);
 font-weight: 500;
 font-size: 16px;
@@ -75,6 +98,13 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--primary-text-color);
+}
+.contact-info .item + .item{
+margin-left: 40px;
+}
+.contact-info{
+  display: flex;
+  margin-left: 303px;
 }
 
 /* 2. main */
@@ -130,6 +160,7 @@ padding: 12px 24px;
 border-color: var(--footer-text-color);
 background: var(--bcg-secbutton-color);
 min-height: 48px;
+display: inline-flex
 }
 .button.secondary:hover,
 .button.secondary:focus {
@@ -241,3 +272,27 @@ letter-spacing: 0.02em;
   color: var(--bcg-secbutton-color);
 }
 
+.list.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  justify-content: space-between;
+}
+.list.button-list{
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+.list.advantages,
+.list.work-departments,
+.list.card{
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+/* .list.work-departments{
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+} */
