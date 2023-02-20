@@ -27,8 +27,7 @@ body {
   }
 /* 1. header */
 .header{
-  padding-top: 24px;
-  padding-bottom: 24px;
+  
    
 }
 
@@ -45,7 +44,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 /* logo */
 .logo{
@@ -194,7 +193,7 @@ margin-bottom: 48px;
   text-align: center;
   color: var(--footer-text-color);
   background-color: var(--title-color);
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   padding-top: 188px;
   padding-bottom: 188px;
   }
@@ -240,7 +239,6 @@ margin-bottom: 8px;
   padding-bottom: 120px;
 }
 .list-image {
-  
   margin-bottom: 32px;
 }
   
@@ -275,9 +273,20 @@ letter-spacing: 0.02em;
 .list.card-set {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
-  justify-content: space-between;
+  /* row-gap: 48px;
+  column-gap: 24px; */
+  /* justify-content: space-between; */
+}
+.flex-element{
+  width: 360px;
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+.flex-element:nth-child(3n){
+  margin-right: 0;
+}
+.flex-element:nth-last-child(-n + 3){
+  margin-bottom: 0;
 }
 .list.button-list{
   display: flex;
