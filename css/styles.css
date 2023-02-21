@@ -56,6 +56,8 @@ h1, h2, h3, h4, h5, h6, p{
 .link.logo{
 padding-top: 24px;
 padding-bottom: 24px;
+line-height: 1.3333;
+color: var(--title-color);
 }
 .logo{
 font-family: 'Raleway', sans-serif;
@@ -68,6 +70,9 @@ text-transform: uppercase;
 .main-nav{
   display: flex;
   align-items: center;
+}
+.main-nav a{
+display: block;
 }
 /* site nav */
 
@@ -89,7 +94,6 @@ text-transform: uppercase;
 display: block;
 padding-top: 24px;
 padding-bottom: 24px;
-
 color: var(--title-color);
 font-weight: 500;
 font-size: 16px;
@@ -120,22 +124,18 @@ margin-left: 40px;
 .contact-info a{
   padding-top: 24px;
   padding-bottom: 24px;
+  display: block;
 }
 
 /* 2. main */
 
 
 .link{
-font-family: 'Roboto', sans-serif;
-color:var(--title-color)
-line-height: 1.17;
-letter-spacing: 0.03em;
 text-decoration: none;
-font-size: 18px;
 }
-.link:active{
+/* .link:active{
   color: var(--active)
-}
+} */
 .contact-info a {
   color: var(--primary-text-color);
 }
@@ -155,7 +155,6 @@ letter-spacing: 0.04em;
 cursor: pointer;
 border-radius: 4px;
 text-align: center;
-border: 1px solid var(--footer-text-color);
 }
 
 .button.primary {
@@ -163,6 +162,7 @@ color: var(--background-color);
 background-color: var(--logo-primbutton-color);
 padding: 16px 32px;
 min-width: 169px;
+border: none;
 }
 .button.primary:hover,
 .button.primary:focus {
@@ -172,9 +172,9 @@ min-width: 169px;
 .button.secondary {
 color: var(--logo-primbutton-color);
 padding: 12px 24px;
-border-color: var(--footer-text-color);
 background: var(--bcg-secbutton-color);
 min-height: 48px;
+border: 1px solid var(--footer-text-color);
 }
 .button.secondary:hover,
 .button.secondary:focus {
@@ -228,6 +228,9 @@ margin-bottom: 72px;
 .title-portfolio{
 display: none;
 }
+.li-item{
+width: 264px;
+}
 .section-title {
 color: var(--title-color);
 font-weight: 500;
@@ -239,7 +242,6 @@ margin-top: 0;
 margin-bottom: 8px;
 }
 .section-text{
-width: 264px;
 margin-top: 0;
 font-style: normal;
 font-weight: 400;
@@ -247,12 +249,14 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
+.section-text-group {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
+}
 .container.work-departments{
   margin-bottom: 120px;
-}
-.section-text-group{
-
-  
 }
 .team {
   background-color: var(--bcg-secbutton-color);
@@ -269,7 +273,7 @@ background-color: #fff;
 
 }
 .team-description{
-  padding: 32px auto 32px 16px;
+  padding: 32px 16px 32px 16px;
   background: #FFFFFF;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
@@ -285,10 +289,10 @@ border-radius: 0px 0px 4px 4px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.card-description{
+.card-description {
   padding: 32px 16px;
-  border-radius: 0px 0px 4px 4px;
-  border: 1px solid #E7E9FC
+  border: 1px solid #E7E9FC;
+  border-top: none;
 }
 .footer{
   background-color:var(--title-color);
